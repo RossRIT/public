@@ -1,3 +1,4 @@
+#A program to send emails to an emails folder as txt files
 import win32com.client
 
 #Connect to Outlook
@@ -15,7 +16,7 @@ for email in emails:
 
     #Create a file
     filename = f"{subject}.txt"
-    file_path = f"C:/Users/canti/OneDrive/Desktop/emails/{filename}"  # Set your desired file path here
+    file_path = f"C:/set/to/your/destination/emails/{filename}"  # Set your desired file path here
 
     #Write the email content to the file
     with open(file_path, "w") as file:
